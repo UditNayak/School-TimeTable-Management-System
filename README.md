@@ -46,3 +46,6 @@
 ![DeleteClassroomAfter](assests/ClassroomTableAfterDeletion.png)
 
 ![DeleteClassroomJson](assests/ClassroomTableDeleteJson.png)
+
+#### Get TimeTable
+![GetTimeTable](assests/TimeTableGetOperation.png)
