@@ -5,6 +5,7 @@ import udit.dev.schooltimetablemanagementsystem.dtos.TimeTableEntryCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
 import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryService;
 
+import java.sql.Time;
 import java.util.Optional;
 
 @RestController
@@ -21,6 +22,11 @@ public class TimeTableEntryController {
         return timeTableEntryService.createTimeTableEntry(timeTableEntry);
     }
 
+    @PutMapping("/update")
+    public TimeTableEntry updateTimeTableEntry(@RequestBody TimeTableEntry timeTableEntry) {
+        return timeTableEntryService.updateTimeTableEntry(timeTableEntry);
+    }
+  
     @GetMapping("/{id}")
     public TimeTableEntry getTimeTableEntryById(@PathVariable Long id){
         return timeTableEntryService.getTimeTableEntryById(id);

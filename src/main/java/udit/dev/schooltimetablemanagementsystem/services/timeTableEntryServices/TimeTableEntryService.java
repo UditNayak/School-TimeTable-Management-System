@@ -14,6 +14,7 @@ public interface TimeTableEntryService {
 
     TimeTableEntry getTimeTableEntryById(Long id);
 
+    TimeTableEntry updateTimeTableEntry(TimeTableEntry timeTableEntry);
     // Provide a feature to list all timetable entries for a specific classroom.
     List<TimeTableEntry> getAllTimeTableEntriesByClassroom(Long classroomId);
     List<TimeTableEntry> getAllTimeTableEntriesBySubject(Long classroomId);
