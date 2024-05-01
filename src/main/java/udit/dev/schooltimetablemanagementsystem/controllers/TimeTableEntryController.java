@@ -26,4 +26,9 @@ public class TimeTableEntryController {
     public TimeTableEntry updateTimeTableEntry(@RequestBody TimeTableEntry timeTableEntry) {
         return timeTableEntryService.updateTimeTableEntry(timeTableEntry);
     }
+  
+    @GetMapping("/{id}")
+    public TimeTableEntry getTimeTableEntryById(@PathVariable Long id){
+        return timeTableEntryService.getTimeTableEntryById(id);
+    }
 }

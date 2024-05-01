@@ -55,3 +55,13 @@
 ![UpdateTimeTableAfter](assests/TimeTableEntryAfterUpdation.png)
 ![UpdateTimeTableJson](assests/TimeTableUpdationJson1.png)
 ![UpdateTimeTableJson2](assests/TimeTableUpdationJson2.png)
+#### Get TimeTable
+![GetTimeTable](assests/TimeTableGetOperation.png)
+
+#### Get All TimeTables related to a particular Classroom using Classroom ID 
+##### http://localhost:8080/classroom/timetables/1
+![GetAllTimeTables](assests/AllTimeTableEntriesByClassroomId.png)
+
+#### Get all TimeTableEntries linked to a specific Subject by SubjectID
+##### http://localhost:8080/subject/timetables/1
+![AllTimeTableEntriesBySubjectId](assests/AllTimeTableEntriesBySubjectId.png)
