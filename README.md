@@ -72,3 +72,11 @@
 #### Get all TimeTableEntries linked to a specific Subject by SubjectID
 ##### http://localhost:8080/subject/timetables/1
 ![AllTimeTableEntriesBySubjectId](assests/AllTimeTableEntriesBySubjectId.png)
+
+#### TimeTable Subject Updation
+##### http://localhost:8080/timetableEntry/assignSubjectToTimeSlot/2/2
+###### Before Update
+![TimeTableSubjectBeforeUpdate](assests/TimeTableSubjectUpdationBefore.png)
+###### After Update
+![TimeTableSubjectAfterUpdate](assests/TimeTableSubjectUpdationAfter.png)
+![TimeTableSubjectUpdateJson](assests/TimeTableSubjectUpdationJson.png)

@@ -63,4 +63,13 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
         Subject subject = subjectServiceImp.getSubjectById(subjectId);
         return timeTableEntryRepository.getTimeTableEntriesBySubject(subject);
     }
+
+    // Implement functionalities to assign subjects to specific time slots in the timetable.
+    @Override
+    public TimeTableEntry assignSubjectToTimeSlot(Long timeTableEntryId, Long subjectId){
+        TimeTableEntry timeTableEntry = timeTableEntryRepository.findById(timeTableEntryId).get();
+        Subject subject = subjectServiceImp.getSubjectById(subjectId);
+        timeTableEntry.setSubject(subject);
+        return timeTableEntryRepository.save(timeTableEntry);
+    }
 }

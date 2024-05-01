@@ -37,4 +37,9 @@ public class TimeTableEntryController {
         timeTableEntryService.deleteTimeTableEntry(id);
         return "TimeTableEntry deleted successfully";
     }
+
+    @PutMapping("/assignSubjectToTimeSlot/{timeTableEntryId}/{subjectId}")
+    public TimeTableEntry assignSubjectToTimeSlot(@PathVariable Long timeTableEntryId, @PathVariable Long subjectId){
+        return timeTableEntryService.assignSubjectToTimeSlot(timeTableEntryId, subjectId);
+    }
 }
