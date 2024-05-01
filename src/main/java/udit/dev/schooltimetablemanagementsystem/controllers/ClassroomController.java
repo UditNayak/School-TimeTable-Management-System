@@ -16,13 +16,24 @@ public class ClassroomController {
         this.classroomServiceImp = classroomServiceImp;
     }
 
-    @GetMapping("/")
-    public String hello() {
-        return "Hello from classroom controller using GET method.";
+    @GetMapping("/{id}")
+    public Classroom getClassroomById(@PathVariable Long id){
+        return classroomServiceImp.getClassroomById(id);
+    }
+
+    @PutMapping("update")
+    public Classroom updateClassroom(@RequestBody Classroom classroom){
+        return classroomServiceImp.updateClassroom(classroom);
     }
 
     @PostMapping("/create")
     public Classroom createClassroom(@RequestBody ClassroomCreateDTO classroom){
         return classroomServiceImp.createClassroom(classroom);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteClassroom(@PathVariable Long id){
+        classroomServiceImp.deleteClassroom(id);
+        return "Classroom deleted successfully";
     }
 }

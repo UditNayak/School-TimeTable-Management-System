@@ -8,4 +8,8 @@ public interface ClassroomService {
     Classroom createClassroom(ClassroomCreateDTO classroom);
 
     Classroom getClassroomById(Long id);
+
+    Classroom updateClassroom(Classroom classroom);
+
+    void deleteClassroom(Long id);
 }

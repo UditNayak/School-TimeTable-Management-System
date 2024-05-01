@@ -27,4 +27,14 @@ public class ClassroomServiceImp implements ClassroomService {
     public Classroom getClassroomById(Long id){
         return classroomRepository.findById(id).get();
     }
+
+    @Override
+    public Classroom updateClassroom(Classroom classroom){
+        return classroomRepository.save(classroom);
+    }
+
+    @Override
+    public void deleteClassroom(Long id){
+        classroomRepository.deleteById(id);
+    }
 }
