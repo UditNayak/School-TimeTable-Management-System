@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import udit.dev.schooltimetablemanagementsystem.dtos.SubjectCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.Subject;
 import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
+import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectServiceImp;
 import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectService;
 import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectServiceImp;
 import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryService;

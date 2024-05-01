@@ -54,6 +54,11 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
     }
 
     @Override
+    public void deleteTimeTableEntry(Long id){
+        timeTableEntryRepository.deleteById(id);
+    }
+    
+    @Override
     public List<TimeTableEntry> getAllTimeTableEntriesBySubject(Long subjectId){
         Subject subject = subjectServiceImp.getSubjectById(subjectId);
         return timeTableEntryRepository.getTimeTableEntriesBySubject(subject);

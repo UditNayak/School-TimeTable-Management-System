@@ -62,6 +62,13 @@
 ##### http://localhost:8080/classroom/timetables/1
 ![GetAllTimeTables](assests/AllTimeTableEntriesByClassroomId.png)
 
+#### Delete TimeTableEntry
+###### http://localhost:8080/timetableEntry/3
+##### Before Delete
+![DeleteTimeTableBefore](assests/TimeTableBeforeDeletion.png)
+##### After Delete
+![DeleteTimeTableAfter](assests/TimeTableAfterDeletion.png)
+![DeleteTimeTableJson](assests/TimeTableDeletionJson.png)
 #### Get all TimeTableEntries linked to a specific Subject by SubjectID
 ##### http://localhost:8080/subject/timetables/1
 ![AllTimeTableEntriesBySubjectId](assests/AllTimeTableEntriesBySubjectId.png)
