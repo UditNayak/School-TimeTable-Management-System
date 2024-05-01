@@ -20,4 +20,6 @@ public interface TimeTableEntryService {
 
     void deleteTimeTableEntry(Long id);
     List<TimeTableEntry> getAllTimeTableEntriesBySubject(Long classroomId);
+
+    public TimeTableEntry assignSubjectToTimeSlot(Long timeTableEntryId, Long subjectId);
 }
