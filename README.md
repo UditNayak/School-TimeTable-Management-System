@@ -26,3 +26,23 @@
 ###### output json
 ![CreateTimeTableJSONOutput](assests/TimeTableCreationOutput.png)
 ![TimeTableAfterCreation](assests/TimeTableUpdated.png)
+
+#### Get Classroom
+##### http://localhost:8080/classroom/1
+![GetClassroom](assests/ClassroomGet.png)
+
+#### Update Classroom
+##### http://localhost:8080/classroom/update
+###### Before Update
+![UpdateClassroomBefore](assests/ClassroomBeforeUpdate.png)
+###### After Update
+![UpdateClassroomAfter](assests/ClassroomTableAfterUpdate.png)
+![ClassroomUpdateJson](assests/ClassroomUpdateJson.png)
+
+#### Delete Classroom
+###### Before Delete
+![DeleteClassroomBefore](assests/ClassroomTableBeforeDeletion.png)
+###### After Delete
+![DeleteClassroomAfter](assests/ClassroomTableAfterDeletion.png)
+
+![DeleteClassroomJson](assests/ClassroomTableDeleteJson.png)
