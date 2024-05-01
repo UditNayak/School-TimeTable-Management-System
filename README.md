@@ -49,3 +49,7 @@
 
 #### Get TimeTable
 ![GetTimeTable](assests/TimeTableGetOperation.png)
+
+#### Get All TimeTables related to a particular Classroom using Classroom ID 
+##### http://localhost:8080/classroom/timetables/1
+![GetAllTimeTables](assests/AllTimeTableEntriesByClassroomId.png)

@@ -1,6 +1,7 @@
 package udit.dev.schooltimetablemanagementsystem.services.classroomServices;
 import udit.dev.schooltimetablemanagementsystem.dtos.ClassroomCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.Classroom;
+import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
 
 import java.util.List;
 
