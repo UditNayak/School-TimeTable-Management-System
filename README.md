@@ -1,0 +1,28 @@
+#### Initial Tables with their respective columns
+![ClassroomTableInitial](assests/ClassroomTableInitial.png)
+![StudentTableInitial](assests/SubjectTableInitial.png)
+![TeacherTableInitial](assests/TeacherTableInitial.png)
+![TimeTableInitial](assests/TimeTableInitial.png)
+
+#### Create Teacher 
+##### http://localhost:8080/teacher/create
+![CreateTeacher](assests/TeacherCreation.png)
+![TeacherTableAfterCreation](assests/DeepakTable.png)
+
+#### Create Subject
+##### http://localhost:8080/subject/create
+![CreateSubject](assests/SubjectCreation.png)
+![SubjectTableAfterCreation](assests/SubjectTableUpdated.png)
+
+#### Create Classroom
+##### http://localhost:8080/classroom/create
+![CreateClassroom](assests/ClassroomCreation.png)
+![ClassroomTableAfterCreation](assests/ClassroomTableUpdated.png)
+
+#### Create TimeTable
+##### http://localhost:8080/timetableEntry/create
+###### input json
+![CreateTimeTableJSON](assests/TimeTableCreationInput.png)
+###### output json
+![CreateTimeTableJSONOutput](assests/TimeTableCreationOutput.png)
+![TimeTableAfterCreation](assests/TimeTableUpdated.png)
