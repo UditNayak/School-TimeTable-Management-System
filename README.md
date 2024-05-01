@@ -47,6 +47,14 @@
 
 ![DeleteClassroomJson](assests/ClassroomTableDeleteJson.png)
 
+#### Update TimeTable
+##### http://localhost:8080/timetableEntry/update
+###### Before Update
+![UpdateTimeTableBefore](assests/TimeTableEntryBeforeUpdation.png)
+###### After Update
+![UpdateTimeTableAfter](assests/TimeTableEntryAfterUpdation.png)
+![UpdateTimeTableJson](assests/TimeTableUpdationJson1.png)
+![UpdateTimeTableJson2](assests/TimeTableUpdationJson2.png)
 #### Get TimeTable
 ![GetTimeTable](assests/TimeTableGetOperation.png)
 
@@ -61,3 +69,6 @@
 ##### After Delete
 ![DeleteTimeTableAfter](assests/TimeTableAfterDeletion.png)
 ![DeleteTimeTableJson](assests/TimeTableDeletionJson.png)
+#### Get all TimeTableEntries linked to a specific Subject by SubjectID
+##### http://localhost:8080/subject/timetables/1
+![AllTimeTableEntriesBySubjectId](assests/AllTimeTableEntriesBySubjectId.png)

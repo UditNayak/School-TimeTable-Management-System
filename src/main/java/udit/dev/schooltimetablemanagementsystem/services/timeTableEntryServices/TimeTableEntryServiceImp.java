@@ -42,7 +42,11 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
         return timeTableEntryRepository.findById(id).get();
     }
 
-    // Provide a feature to list all timetable entries for a specific classroom.
+    @Override
+    public TimeTableEntry updateTimeTableEntry(TimeTableEntry timeTableEntry){
+        return timeTableEntryRepository.save(timeTableEntry);
+    }
+      // Provide a feature to list all timetable entries for a specific classroom.
     @Override
     public List<TimeTableEntry> getAllTimeTableEntriesByClassroom(Long classroomId){
         Classroom classroom = classroomServiceImp.getClassroomById(classroomId);
@@ -52,5 +56,11 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
     @Override
     public void deleteTimeTableEntry(Long id){
         timeTableEntryRepository.deleteById(id);
+    }
+    
+    @Override
+    public List<TimeTableEntry> getAllTimeTableEntriesBySubject(Long subjectId){
+        Subject subject = subjectServiceImp.getSubjectById(subjectId);
+        return timeTableEntryRepository.getTimeTableEntriesBySubject(subject);
     }
 }

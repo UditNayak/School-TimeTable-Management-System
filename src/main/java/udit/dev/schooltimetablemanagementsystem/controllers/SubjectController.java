@@ -5,6 +5,9 @@ import udit.dev.schooltimetablemanagementsystem.dtos.SubjectCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.Subject;
 import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
 import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectServiceImp;
+import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectService;
+import udit.dev.schooltimetablemanagementsystem.services.subjectServices.SubjectServiceImp;
+import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryService;
 import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryServiceImp;
 
 import java.util.List;
@@ -13,9 +16,9 @@ import java.util.List;
 @RequestMapping("/subject")
 public class SubjectController {
     private SubjectServiceImp subjectServiceImp;
-    private TimeTableEntryServiceImp timeTableEntryServiceImp;
+    private TimeTableEntryService timeTableEntryServiceImp;
 
-    public SubjectController(SubjectServiceImp subjectServiceImp, TimeTableEntryServiceImp timeTableEntryServiceImp) {
+    SubjectController(SubjectServiceImp subjectServiceImp, TimeTableEntryServiceImp timeTableEntryServiceImp) {
         this.subjectServiceImp = subjectServiceImp;
         this.timeTableEntryServiceImp = timeTableEntryServiceImp;
     }
@@ -26,8 +29,8 @@ public class SubjectController {
         return subjectServiceImp.createSubject(subject);
     }
 
-    @PostMapping("/timetables/{id}")
-    public List<TimeTableEntry> getTimeTableEntryByClassroomId(@PathVariable Long id){
-        return timeTableEntryServiceImp.getAllTimeTableEntriesByClassroom(id);
+    @GetMapping("/timetables/{id}")
+    public List<TimeTableEntry> getTimeTableEntriesBySubjectId(@PathVariable Long id) {
+        return timeTableEntryServiceImp.getAllTimeTableEntriesBySubject(id);
     }
 }
