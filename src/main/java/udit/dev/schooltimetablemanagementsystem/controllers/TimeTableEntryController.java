@@ -1,5 +1,7 @@
 package udit.dev.schooltimetablemanagementsystem.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,9 +20,12 @@ public class TimeTableEntryController {
     TimeTableEntryController(TimeTableEntryService timeTableEntryService) {
         this.timeTableEntryService = timeTableEntryService;
     }
+    private Logger logger = LoggerFactory.getLogger(ClassroomController.class);
+
 
     @PostMapping("/create")
     public TimeTableEntry createTimeTableEntry(@RequestBody TimeTableEntryCreateDTO timeTableEntry) {
+        logger.warn("Updated table Entry: {}", timeTableEntry);
         return timeTableEntryService.createTimeTableEntry(timeTableEntry);
     }
 }

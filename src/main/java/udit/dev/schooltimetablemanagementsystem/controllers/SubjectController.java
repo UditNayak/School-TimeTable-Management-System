@@ -1,5 +1,7 @@
 package udit.dev.schooltimetablemanagementsystem.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +14,7 @@ import udit.dev.schooltimetablemanagementsystem.services.subjectServices.Subject
 @RequestMapping("/subject")
 public class SubjectController {
     private SubjectServiceImp subjectServiceImp;
+    private Logger logger = LoggerFactory.getLogger(ClassroomController.class);
 
     SubjectController(SubjectServiceImp subjectServiceImp) {
         this.subjectServiceImp = subjectServiceImp;
@@ -19,6 +22,7 @@ public class SubjectController {
 
     @PostMapping("/create")
     public Subject createSubject(@RequestBody SubjectCreateDTO subject) {
+        logger.warn("Subject Created: {}", subject);
         System.out.println(subject.getTeacherId());
         return subjectServiceImp.createSubject(subject);
     }
