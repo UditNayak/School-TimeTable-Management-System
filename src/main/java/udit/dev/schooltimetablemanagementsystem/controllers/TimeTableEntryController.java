@@ -1,13 +1,11 @@
 package udit.dev.schooltimetablemanagementsystem.controllers;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import udit.dev.schooltimetablemanagementsystem.dtos.TimeTableEntryCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
 import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryService;
 
+import java.sql.Time;
 import java.util.Optional;
 
 @RestController
@@ -22,5 +20,10 @@ public class TimeTableEntryController {
     @PostMapping("/create")
     public TimeTableEntry createTimeTableEntry(@RequestBody TimeTableEntryCreateDTO timeTableEntry) {
         return timeTableEntryService.createTimeTableEntry(timeTableEntry);
+    }
+
+    @PutMapping("/update")
+    public TimeTableEntry updateTimeTableEntry(@RequestBody TimeTableEntry timeTableEntry) {
+        return timeTableEntryService.updateTimeTableEntry(timeTableEntry);
     }
 }

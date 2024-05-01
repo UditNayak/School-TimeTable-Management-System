@@ -40,4 +40,9 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
     public TimeTableEntry getTimeTableEntryById(Long id){
         return timeTableEntryRepository.findById(id).get();
     }
+
+    @Override
+    public TimeTableEntry updateTimeTableEntry(TimeTableEntry timeTableEntry){
+        return timeTableEntryRepository.save(timeTableEntry);
+    }
 }

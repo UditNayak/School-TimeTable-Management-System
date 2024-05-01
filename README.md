@@ -46,3 +46,12 @@
 ![DeleteClassroomAfter](assests/ClassroomTableAfterDeletion.png)
 
 ![DeleteClassroomJson](assests/ClassroomTableDeleteJson.png)
+
+#### Update TimeTable
+##### http://localhost:8080/timetableEntry/update
+###### Before Update
+![UpdateTimeTableBefore](assests/TimeTableEntryBeforeUpdation.png)
+###### After Update
+![UpdateTimeTableAfter](assests/TimeTableEntryAfterUpdation.png)
+![UpdateTimeTableJson](assests/TimeTableUpdationJson1.png)
+![UpdateTimeTableJson2](assests/TimeTableUpdationJson2.png)

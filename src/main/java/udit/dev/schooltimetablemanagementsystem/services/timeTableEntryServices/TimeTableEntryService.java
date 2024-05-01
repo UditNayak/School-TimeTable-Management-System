@@ -11,4 +11,6 @@ public interface TimeTableEntryService {
     TimeTableEntry createTimeTableEntry(TimeTableEntryCreateDTO timeTableEntryDto);
 
     TimeTableEntry getTimeTableEntryById(Long id);
+
+    TimeTableEntry updateTimeTableEntry(TimeTableEntry timeTableEntry);
 }
