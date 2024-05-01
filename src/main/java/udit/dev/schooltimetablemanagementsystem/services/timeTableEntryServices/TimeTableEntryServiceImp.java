@@ -15,6 +15,7 @@ import udit.dev.schooltimetablemanagementsystem.services.teacherServices.Teacher
 import java.sql.Time;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -39,5 +40,12 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
     @Override
     public TimeTableEntry getTimeTableEntryById(Long id){
         return timeTableEntryRepository.findById(id).get();
+    }
+
+    // Provide a feature to list all timetable entries for a specific classroom.
+    @Override
+    public List<TimeTableEntry> getAllTimeTableEntriesByClassroom(Long classroomId){
+        Classroom classroom = classroomServiceImp.getClassroomById(classroomId);
+        return timeTableEntryRepository.getTimeTableEntriesByClassroom(classroom);
     }
 }

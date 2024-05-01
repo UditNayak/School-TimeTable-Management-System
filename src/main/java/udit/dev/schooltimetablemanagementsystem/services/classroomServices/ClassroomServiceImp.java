@@ -1,17 +1,23 @@
 package udit.dev.schooltimetablemanagementsystem.services.classroomServices;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import udit.dev.schooltimetablemanagementsystem.dtos.ClassroomCreateDTO;
 import udit.dev.schooltimetablemanagementsystem.models.Classroom;
+import udit.dev.schooltimetablemanagementsystem.models.TimeTableEntry;
 import udit.dev.schooltimetablemanagementsystem.repositories.ClassroomRepository;
+import udit.dev.schooltimetablemanagementsystem.services.timeTableEntryServices.TimeTableEntryServiceImp;
+
+import java.util.List;
 @Service
 @Primary
 public class ClassroomServiceImp implements ClassroomService {
     private ClassroomRepository classroomRepository;
 
     ClassroomServiceImp(ClassroomRepository classroomRepository) {
+
         this.classroomRepository = classroomRepository;
     }
 
@@ -37,4 +43,5 @@ public class ClassroomServiceImp implements ClassroomService {
     public void deleteClassroom(Long id){
         classroomRepository.deleteById(id);
     }
+
 }
