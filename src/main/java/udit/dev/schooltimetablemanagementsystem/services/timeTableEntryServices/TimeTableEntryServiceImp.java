@@ -48,4 +48,10 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
         Classroom classroom = classroomServiceImp.getClassroomById(classroomId);
         return timeTableEntryRepository.getTimeTableEntriesByClassroom(classroom);
     }
+
+    @Override
+    public List<TimeTableEntry> getAllTimeTableEntriesBySubject(Long subjectId){
+        Subject subject = subjectServiceImp.getSubjectById(subjectId);
+        return timeTableEntryRepository.getTimeTableEntriesBySubject(subject);
+    }
 }
