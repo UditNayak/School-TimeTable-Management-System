@@ -53,3 +53,11 @@
 #### Get All TimeTables related to a particular Classroom using Classroom ID 
 ##### http://localhost:8080/classroom/timetables/1
 ![GetAllTimeTables](assests/AllTimeTableEntriesByClassroomId.png)
+
+#### Delete TimeTableEntry
+###### http://localhost:8080/timetableEntry/3
+##### Before Delete
+![DeleteTimeTableBefore](assests/TimeTableBeforeDeletion.png)
+##### After Delete
+![DeleteTimeTableAfter](assests/TimeTableAfterDeletion.png)
+![DeleteTimeTableJson](assests/TimeTableDeletionJson.png)

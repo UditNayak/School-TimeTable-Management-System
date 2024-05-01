@@ -25,4 +25,10 @@ public class TimeTableEntryController {
     public TimeTableEntry getTimeTableEntryById(@PathVariable Long id){
         return timeTableEntryService.getTimeTableEntryById(id);
     }
+
+    @DeleteMapping("/{id}")
+    public String deleteTimeTableEntry(@PathVariable Long id){
+        timeTableEntryService.deleteTimeTableEntry(id);
+        return "TimeTableEntry deleted successfully";
+    }
 }

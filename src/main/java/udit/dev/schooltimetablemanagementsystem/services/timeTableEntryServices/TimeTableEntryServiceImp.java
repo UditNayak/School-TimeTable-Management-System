@@ -48,4 +48,9 @@ public class TimeTableEntryServiceImp implements TimeTableEntryService{
         Classroom classroom = classroomServiceImp.getClassroomById(classroomId);
         return timeTableEntryRepository.getTimeTableEntriesByClassroom(classroom);
     }
+
+    @Override
+    public void deleteTimeTableEntry(Long id){
+        timeTableEntryRepository.deleteById(id);
+    }
 }

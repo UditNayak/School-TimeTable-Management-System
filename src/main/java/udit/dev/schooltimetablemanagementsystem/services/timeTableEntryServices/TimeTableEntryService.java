@@ -16,4 +16,6 @@ public interface TimeTableEntryService {
 
     // Provide a feature to list all timetable entries for a specific classroom.
     List<TimeTableEntry> getAllTimeTableEntriesByClassroom(Long classroomId);
+
+    void deleteTimeTableEntry(Long id);
 }
