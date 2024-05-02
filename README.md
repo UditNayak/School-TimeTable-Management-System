@@ -108,13 +108,15 @@
 
 
 ### Authorisation of Admin
-- Credential (Userid, password) Through URL
+- <strong>Credential (Userid, password) Through URL</strong>
 <br>
 But our URL will became too long (BAD PRACTICE). As many browsers have some limit on the length of the URL.
-- Credential (Userid, password) Through Request Body (JSON)
+<br>
+- <strong>Credential (Userid, password) Through Request Body (JSON)</strong>
 <br>
 In the request body, apart from the actual data, the user will also send the credentials. This is a better approach as the URL will not be too long and the credentials will be sent in the request body.
-- JWT Token (JSON Web Token)
+<br>
+- <strong>JWT Token (JSON Web Token)</strong>
 
 ### Logging Functionality
 #### Workflow of Logging

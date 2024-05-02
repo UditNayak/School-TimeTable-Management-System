@@ -97,3 +97,52 @@
 2024-05-02 12:32:01,357 [WARN] udit.dev.schooltimetablemanagementsystem.controllers.TimeTableEntryController [http-nio-8080-exec-7] timetable entry created.
 2024-05-02 12:32:33,593 [WARN] udit.dev.schooltimetablemanagementsystem.controllers.ClassroomController [http-nio-8080-exec-9] Updating classroom: udit.dev.schooltimetablemanagementsystem.models.Classroom@21a7a7f0
 2024-05-02 12:33:07,871 [WARN] udit.dev.schooltimetablemanagementsystem.controllers.ClassroomController [http-nio-8080-exec-10] Deleting classroom by id: 7
+2024-05-02 12:57:59,779 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] Starting SchoolTimeTableManagementSystemApplication using Java 17.0.8 with PID 21104 (C:\Users\uditn\OneDrive\Desktop\School-TimeTable-Management-System\target\classes started by uditn in C:\Users\uditn\OneDrive\Desktop\School-TimeTable-Management-System)
+2024-05-02 12:57:59,781 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-02 12:58:00,047 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02 12:58:00,075 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2024-05-02 12:58:00,175 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-02 12:58:00,176 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-05-02 12:58:00,176 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-02 12:58:00,244 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-02 12:58:00,244 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 459 ms
+2024-05-02 12:58:00,276 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02 12:58:00,280 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-02 12:58:00,286 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02 12:58:00,287 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-05-02 12:58:00,317 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@210577d8
+2024-05-02 12:58:00,317 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-05-02 12:58:00,418 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02 12:58:00,502 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02 12:58:00,594 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-02 12:58:00,703 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-02 12:58:00,719 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-02 12:58:00,722 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] Started SchoolTimeTableManagementSystemApplication in 1.018 seconds (process running for 34611.283)
+2024-05-02 12:58:00,724 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-02 12:58:02,208 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2024-05-02 12:58:02,257 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02 12:58:02,257 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2024-05-02 12:58:02,307 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2024-05-02 12:58:02,397 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] Starting SchoolTimeTableManagementSystemApplication using Java 17.0.8 with PID 21104 (C:\Users\uditn\OneDrive\Desktop\School-TimeTable-Management-System\target\classes started by uditn in C:\Users\uditn\OneDrive\Desktop\School-TimeTable-Management-System)
+2024-05-02 12:58:02,397 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-05-02 12:58:02,966 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02 12:58:03,067 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 110 ms. Found 4 JPA repository interfaces.
+2024-05-02 12:58:03,487 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-05-02 12:58:03,494 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-05-02 12:58:03,497 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-02 12:58:03,605 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-05-02 12:58:03,606 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1209 ms
+2024-05-02 12:58:03,690 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02 12:58:03,693 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-05-02 12:58:03,701 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02 12:58:03,702 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2024-05-02 12:58:03,822 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@292740f4
+2024-05-02 12:58:03,822 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2024-05-02 12:58:03,997 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02 12:58:04,049 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02 12:58:04,325 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-02 12:58:04,724 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-05-02 12:58:04,814 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-05-02 12:58:04,844 [INFO] udit.dev.schooltimetablemanagementsystem.SchoolTimeTableManagementSystemApplication [restartedMain] Started SchoolTimeTableManagementSystemApplication in 2.479 seconds (process running for 34615.405)
+2024-05-02 12:58:04,844 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-05-02 13:05:23,856 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-3 housekeeper] HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=6m19s903ms826µs200ns).
