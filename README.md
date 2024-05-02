@@ -1,3 +1,17 @@
+# Requirements
+- [x] Class Design
+- [X] Classroom Model
+- [x] CRUD Operations for Classroom
+- [x] Feature to list all timetable entries for a specific classroom.
+- [x] Subject Model
+- [x] Implement functionalities to assign subjects to specific time slots in the timetable.
+- [x] Support listing all timetable entries for a specific subject.
+- [x] TimeTableEntry Model
+- [x] CRUD operations for TimeTable
+- [x] Adding logging for each CRUD operation
+
+
+
 #### Initial Tables with their respective columns
 ![ClassroomTableInitial](assests/ClassroomTableInitial.png)
 ![StudentTableInitial](assests/SubjectTableInitial.png)
@@ -65,7 +79,7 @@
 #### Delete TimeTableEntry
 ###### http://localhost:8080/timetableEntry/3
 ##### Before Delete
-![DeleteTimeTableBefore](assests/TimeTableBeforeDeletion.png)
+![DeleteTimeTableBefore](assests/TimetableBeforeDeletion.png)
 ##### After Delete
 ![DeleteTimeTableAfter](assests/TimeTableAfterDeletion.png)
 ![DeleteTimeTableJson](assests/TimeTableDeletionJson.png)
@@ -80,3 +94,5 @@
 ###### After Update
 ![TimeTableSubjectAfterUpdate](assests/TimeTableSubjectUpdationAfter.png)
 ![TimeTableSubjectUpdateJson](assests/TimeTableSubjectUpdationJson.png)
+
+
