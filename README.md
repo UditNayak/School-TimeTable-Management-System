@@ -116,5 +116,19 @@ But our URL will became too long (BAD PRACTICE). As many browsers have some limi
 In the request body, apart from the actual data, the user will also send the credentials. This is a better approach as the URL will not be too long and the credentials will be sent in the request body.
 - JWT Token (JSON Web Token)
 
+### Logging Functionality
+#### Workflow of Logging
+- We have used SLF4J (Simple Logging Facade for Java)library for logging.
+- In every controller we are creating a logger object.
+- We are using this logger object to log the information.
+- We are logging the information in the console.
+- We are also logging the information in the file.
+- We are using logback.xml file to configure the logging to remove the unwanted logs. [Future Implementation]
+
+#### Before Logging
+![BeforeLogging](assests/LogFileBefor.png)
+#### After Logging
+![AfterLogging](assests/LogFileAfter.png)
+
 
 
